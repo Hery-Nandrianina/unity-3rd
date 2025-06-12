@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,9 +38,9 @@ public class Switch : MonoBehaviour
             shooter.fireRate = fireRate2;
         }
         
-        if(Input.GetKeyDown(KeyCode.KeypadPlus)) {
+        if(Input.GetKeyDown(KeyCode.Alpha2)) {
             Index((type == 4) ? 0: type + 1);
-        } else if (Input.GetKeyDown(KeyCode.KeypadMinus)) {
+        } else if (Input.GetKeyDown(KeyCode.Alpha1)) {
             Index((type == 0) ? 4: type - 1);
         }
     }
